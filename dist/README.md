@@ -1,7 +1,7 @@
-# fgsag
+# Sample
 
   ## Description
-  sadfadfasdf
+  writing a readme from command prompt
 
   ## Table of Contents 
   - [Installation](#installation)
@@ -10,16 +10,14 @@
   - [License](#license)
   
   ## Installation
-  dsfasdf
+  node.js
 
   ## Usage
-  argagah
-  fgagfaghagr
+  fadsgag
+  answering questions to auto populate a readme file
 
   
   ## License 
-  [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/) 
-  
-  ![Mozilla Public License 2.0 license badge](https://img.shields.io/badge/license-Mozilla%20Public%20License%202.0-green)
-  
+  [MIT](https://choosealicense.com/licenses/mit/) 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
