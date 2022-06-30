@@ -4,10 +4,15 @@ function renderLicenseBadge(license) {
   if (!license) {
     return "";
   }
-  const badgeUrl = String(license).split(" ").join("%20");
-  return `
-  ![${license} license badge](https://img.shields.io/badge/license-${badgeUrl}-green)
-  `
+  if (license == 'Mozilla Public License 2.0') {
+    return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`}
+  if (license == 'Apache License 2.0') {
+    return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`}
+  if (license == 'MIT') {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`}
+  if (license == 'The Unlicense') {
+    return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`}
+  
 }
 
 // TODO: Create a function that returns the license link
