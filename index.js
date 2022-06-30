@@ -87,12 +87,32 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  
-}
+  return new Promise((resolve, reject) => {
+    fs.writeFile('./dist/README.md', data, err => {
+      if (err) {
+        reject(err);
+        return;
+      }
+      resolve({
+        ok: true,
+        message: 'File created!'
+      });
+    });
+  });
+};
 
 // TODO: Create a function to initialize app
 function init() {
-
+  return inquirer.prompt(questions)
+  .then(answers => {
+    return generateMarkdown(answers);
+  })
+  .then(markdown => {
+    return writeToFile(markdown);
+  })
+  .catch(err => {
+    console.log(err);
+  });
 }
 
 // Function call to initialize app
