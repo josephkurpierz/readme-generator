@@ -80,13 +80,13 @@ const questions = [
     type: 'checkbox',
     name: 'license',
     message: 'Under what license is this application covered?',
-    choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
+    choices: ['Mozilla Public License 2.0', 'Apache License 2.0', 'MIT', 'The Unlicense']
 },
 ];
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
   return new Promise((resolve, reject) => {
     fs.writeFile('./dist/README.md', data, err => {
       if (err) {
@@ -103,7 +103,8 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-  return inquirer.prompt(questions)
+  return inquirer
+  .prompt(questions)
   .then(answers => {
     return generateMarkdown(answers);
   })
@@ -113,7 +114,7 @@ function init() {
   .catch(err => {
     console.log(err);
   });
-}
+};
 
 // Function call to initialize app
 init();
