@@ -1,25 +1,31 @@
-# generator
+# readme-generator
 
   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   ## Description
-  generates things and stuff
+  cdfg
 
   ## Table of Contents 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Languages](#languages)
   - [Contributing](#contributing)
+  - [Languages](#languages)
   - [License](#license)
+  - [Tests](#tests)
+  - [Questions](#questions)
   
   ## Installation
-  use nodejs
+  DSF
 
   ## Usage
-  [github repository](github.com/josephkurpierz)
+  [github repository](https://github.com/josephkurpierz/readme-generator)
 
-  command line prompt
+  DSF
 
+  ## Contributing
   
+  STEEVE, RYAN, CALISTE
+  
+
   ## Languages
   JavaScript
 
@@ -31,8 +37,8 @@
   
 
   ## Tests
-  none
+  no
 
   ## Questions
-  Any questions can be directed towards josephkurpierz at [github repository](github.com/josephkurpierz)
-  Or contact via email: josephkurpierz@gmail.com
+  Any questions can be directed towards josephkurpierz at [github repository](https://github.com/josephkurpierz/)
+  Or contact via email: fdag

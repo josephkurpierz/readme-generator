@@ -48,12 +48,12 @@ function renderLicenseSection(license) {
 
 function renderContributing(check, collaborators){
   if (!check) {
-    return "";
+    return `
+    none
+    `;
   }
   return `
-  ## Collaborators
   ${collaborators}
-
   `
 }
 
@@ -62,25 +62,30 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ${renderLicenseBadge(data.license)}
+  ## Table of Contents 
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Languages](#languages)
+  - [License](#license)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
   ## Description
   ${data.description}
 
-  ## Table of Contents 
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Languages](#languages)
-  - [Contributing](#contributing)
-  - [License](#license)
-  
   ## Installation
   ${data.installation}
 
   ## Usage
-  [github repository](github.com/${data.link})
+  [github repository](https://github.com/${data.gitUser}/${data.title})
 
   ${data.usage}
 
+  ## Contributing
   ${renderContributing(data.collaboratorsCheck, data.collaborators)}
+
   ## Languages
   ${data.languages}
 
@@ -90,7 +95,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  Any questions can be directed towards ${data.link} at [github repository](github.com/${data.link})
+  Any questions can be directed towards ${data.gitUser} at [github profile](https://github.com/${data.gitUser}/)
   Or contact via email: ${data.email}
 `;
 }

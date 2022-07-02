@@ -83,7 +83,7 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'link',
+    name: 'gitUser',
     message: 'Enter your GitHub username. (Required)',
     validate: nameInput => {
       if (nameInput) {
