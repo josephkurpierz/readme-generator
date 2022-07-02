@@ -84,12 +84,25 @@ const questions = [
   {
     type: 'input',
     name: 'link',
-    message: 'Enter the GitHub link to your project. (Required)',
+    message: 'Enter your GitHub username. (Required)',
     validate: nameInput => {
       if (nameInput) {
         return true;
       } else {
-        console.log('Please enter your link!');
+        console.log('Please enter your username!');
+        return false;
+      }
+    }
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'Enter your email address. (Required)',
+    validate: nameInput => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log('Please enter your email!');
         return false;
       }
     }
@@ -100,6 +113,11 @@ const questions = [
     message: 'Under what license is this application covered?',
     choices: ['Mozilla Public License 2.0', 'Apache License 2.0', 'MIT', 'The Unlicense']
 },
+{
+  type: 'input',
+  name: 'tests',
+  message: "Which tests were developed?",
+}
 ];
 
 

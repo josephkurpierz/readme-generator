@@ -1,27 +1,23 @@
-# sgf
+# generator
 
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   ## Description
-  afg
+  generates things and stuff
 
   ## Table of Contents 
   - [Installation](#installation)
   - [Usage](#usage)
   - [Languages](#languages)
-  - [Collaborators](#collaborators)
+  - [Contributing](#contributing)
   - [License](#license)
   
   ## Installation
-  agf
+  use nodejs
 
   ## Usage
-  [github repository](adsf)
+  [github repository](github.com/josephkurpierz)
 
-  afg
-
-  
-  ## Collaborators
-  me, jordan
-
+  command line prompt
 
   
   ## Languages
@@ -29,7 +25,14 @@
 
   
   ## License 
-  [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/) 
+  [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/) 
 
-  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   
+
+  ## Tests
+  none
+
+  ## Questions
+  Any questions can be directed towards josephkurpierz at [github repository](github.com/josephkurpierz)
+  Or contact via email: josephkurpierz@gmail.com

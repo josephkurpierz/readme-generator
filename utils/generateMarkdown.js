@@ -46,7 +46,7 @@ function renderLicenseSection(license) {
   `
 }
 
-function renderCollaborators(check, collaborators){
+function renderContributing(check, collaborators){
   if (!check) {
     return "";
   }
@@ -61,6 +61,7 @@ function renderCollaborators(check, collaborators){
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${renderLicenseBadge(data.license)}
   ## Description
   ${data.description}
 
@@ -68,22 +69,29 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [Languages](#languages)
-  - [Collaborators](#collaborators)
+  - [Contributing](#contributing)
   - [License](#license)
   
   ## Installation
   ${data.installation}
 
   ## Usage
-  [github repository](${data.link})
+  [github repository](github.com/${data.link})
 
   ${data.usage}
 
-  ${renderCollaborators(data.collaboratorsCheck, data.collaborators)}
+  ${renderContributing(data.collaboratorsCheck, data.collaborators)}
   ## Languages
   ${data.languages}
 
   ${renderLicenseSection(data.license)}
+
+  ## Tests
+  ${data.tests}
+
+  ## Questions
+  Any questions can be directed towards ${data.link} at [github repository](github.com/${data.link})
+  Or contact via email: ${data.email}
 `;
 }
 
