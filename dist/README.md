@@ -1,10 +1,8 @@
 # readme-generator
 
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  ## Description
-  cdfg
-
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents 
+  - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contributing](#contributing)
@@ -13,17 +11,20 @@
   - [Tests](#tests)
   - [Questions](#questions)
   
+  ## Description
+  generates a professional readme file
+
   ## Installation
-  DSF
+  install node.js
 
   ## Usage
   [github repository](https://github.com/josephkurpierz/readme-generator)
 
-  DSF
+  user will enter command line prompts to answer questions about their project
 
   ## Contributing
   
-  STEEVE, RYAN, CALISTE
+  me, myself, and I
   
 
   ## Languages
@@ -31,14 +32,14 @@
 
   
   ## License 
-  [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/) 
+  [MIT](https://choosealicense.com/licenses/mit/) 
 
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
 
   ## Tests
-  no
+  none
 
   ## Questions
-  Any questions can be directed towards josephkurpierz at [github repository](https://github.com/josephkurpierz/)
-  Or contact via email: fdag
+  Any questions can be directed towards josephkurpierz at [github profile](https://github.com/josephkurpierz/)
+  Or contact via email: josephkurpierz@gmail.com
