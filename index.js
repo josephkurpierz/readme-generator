@@ -58,6 +58,24 @@ const questions = [
     }
   },
   {
+    type: 'confirm',
+    name: 'collaboratorsCheck',
+    message: "Did you have collaborators on this project?",
+    default: false
+  },
+  {
+    type: 'input',
+    name: 'collaborators',
+    message: "Who collaborated on this project?",
+    when: ({collaboratorsCheck}) => {
+      if (collaboratorsCheck) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  },
+  {
     type: 'checkbox',
     name: 'languages',
     message: "What languages were used in your project?",
@@ -77,7 +95,7 @@ const questions = [
     }
   },
   {
-    type: 'checkbox',
+    type: 'list',
     name: 'license',
     message: 'Under what license is this application covered?',
     choices: ['Mozilla Public License 2.0', 'Apache License 2.0', 'MIT', 'The Unlicense']
@@ -97,6 +115,7 @@ function writeToFile(data) {
         ok: true,
         message: 'File created!'
       });
+      console.log("File Created");
     });
   });
 };

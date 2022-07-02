@@ -46,6 +46,17 @@ function renderLicenseSection(license) {
   `
 }
 
+function renderCollaborators(check, collaborators){
+  if (!check) {
+    return "";
+  }
+  return `
+  ## Collaborators
+  ${collaborators}
+
+  `
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -57,6 +68,7 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [Languages](#languages)
+  - [Collaborators](#collaborators)
   - [License](#license)
   
   ## Installation
@@ -66,6 +78,10 @@ function generateMarkdown(data) {
   [github repository](${data.link})
 
   ${data.usage}
+
+  ${renderCollaborators(data.collaboratorsCheck, data.collaborators)}
+  ## Languages
+  ${data.languages}
 
   ${renderLicenseSection(data.license)}
 `;
