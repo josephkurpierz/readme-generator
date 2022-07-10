@@ -47,12 +47,10 @@ function renderLicenseSection(license) {
 }
 
 function renderLanguageBadge (language) {
-  console.log(language[0]);
   const badgeList =[];
   let badgeLink = "";
   for(let i=0; i< language.length; i++){
     if(language[i] == "Node"){
-      console.log("node, language name equivalent",language[i]);
       badgeLink = '![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)';
       badgeList.push(badgeLink);
     }
