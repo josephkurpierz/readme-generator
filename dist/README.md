@@ -1,6 +1,7 @@
-# readme-generator
+# ag
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E),![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white),![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white),![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white),![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white),![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
   ## Table of Contents 
   - [Description](#description)
   - [Installation](#installation)
@@ -12,34 +13,33 @@
   - [Questions](#questions)
   
   ## Description
-  generates a professional readme file
+  dfg
 
   ## Installation
-  install node.js
+  fdg
 
   ## Usage
-  [github repository](https://github.com/josephkurpierz/readme-generator)
+  [github repository](https://github.com/dfg/ag)
 
-  user will enter command line prompts to answer questions about their project
+  fdag
 
   ## Contributing
-  
-  me, myself, and I
-  
+  <a href="https://github.com/dfg/ag/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=dfg/ag"/> </a>
 
   ## Languages
-  JavaScript
+  JavaScript,HTML,CSS,ES6,jQuery,Bootstrap,Node
 
   
   ## License 
-  [MIT](https://choosealicense.com/licenses/mit/) 
+  [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/) 
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
   
 
   ## Tests
-  none
+  fg
 
   ## Questions
-  Any questions can be directed towards josephkurpierz at [github profile](https://github.com/josephkurpierz/)
-  Or contact via email: josephkurpierz@gmail.com
+  Any questions can be directed towards dfg at [github profile](https://github.com/dfg/)
+  Or contact via email: afsg

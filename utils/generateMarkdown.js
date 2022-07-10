@@ -46,21 +46,58 @@ function renderLicenseSection(license) {
   `
 }
 
-function renderContributing(check, collaborators){
-  if (!check) {
-    return `
-    none
-    `;
+function renderLanguageBadge (language) {
+  console.log(language[0]);
+  const badgeList =[];
+  let badgeLink = "";
+  for(let i=0; i< language.length; i++){
+    if(language[i] == "Node"){
+      console.log("node, language name equivalent",language[i]);
+      badgeLink = '![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)';
+      badgeList.push(badgeLink);
+    }
+    if(language[i] == "HTML"){
+      badgeLink = '![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)';
+      badgeList.push(badgeLink);
+    }
+    if(language[i] == "JavaScript"){
+      badgeLink = '![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)';
+      badgeList.push(badgeLink);
+    }
+    if(language[i] == "CSS"){
+      badgeLink = '![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)';
+      badgeList.push(badgeLink);
+    }
+    if(language[i] == "jQuery"){
+      badgeLink = '![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)';
+      badgeList.push(badgeLink);
+    }
+    if(language[i] == "Bootstrap"){
+      badgeLink = '![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)';
+      badgeList.push(badgeLink);
+    }
   }
-  return `
-  ${collaborators}
-  `
+  console.log(badgeList);
+  return badgeList;
 }
+
+// function renderContributing(check, collaborators){
+//   if (!check) {
+//     return `
+//     none
+//     `;
+//   }
+//   return `
+//   ${collaborators}
+//   `
+// }
+//${renderContributing(data.collaboratorsCheck, data.collaborators)}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${renderLanguageBadge(data.languages)}
   ${renderLicenseBadge(data.license)}
   ## Table of Contents 
   - [Description](#description)
@@ -84,7 +121,8 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Contributing
-  ${renderContributing(data.collaboratorsCheck, data.collaborators)}
+  <a href="https://github.com/${data.gitUser}/${data.title}/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=${data.gitUser}/${data.title}"/> </a>
 
   ## Languages
   ${data.languages}
